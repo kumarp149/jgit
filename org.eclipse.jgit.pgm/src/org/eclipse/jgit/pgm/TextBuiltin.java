@@ -236,6 +236,7 @@ public abstract class TextBuiltin {
 			SshSessionFactory.setInstance(null);
 			break;
 		}
+		System.out.println("RUNNING COMMAND");
 		run();
 	}
 

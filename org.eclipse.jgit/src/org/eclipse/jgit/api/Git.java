@@ -785,6 +785,15 @@ public class Git implements AutoCloseable {
 	}
 
 	/**
+	 * Return a command to verify signatures of tags or commits.
+	 *
+	 * @return a {@link RestoreCommand}
+	 * @since 5.11
+	 */
+
+	public RestoreCommand restore() {return new RestoreCommand(repo);}
+
+	/**
 	 * Get repository
 	 *
 	 * @return the git repository this class is interacting with; see
